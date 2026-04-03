@@ -1,0 +1,47 @@
+table Hoja1
+	lineageTag: 915cbecb-9714-4e13-9371-27994011963b
+
+	measure edadprueba = ```
+			SUM(Hoja1[edad])+1 
+			```
+		formatString: 0
+		lineageTag: 01089eb8-0ab7-433a-bb34-a9582d10b1af
+
+	column nombre
+		dataType: string
+		lineageTag: 954d043e-0442-4d9a-bc17-fbaff72779c0
+		summarizeBy: none
+		sourceColumn: nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column apellido
+		dataType: string
+		lineageTag: 1f5fcac8-1411-4668-a117-d1681c319162
+		summarizeBy: none
+		sourceColumn: apellido
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad
+		dataType: int64
+		formatString: 0
+		lineageTag: 8dcfc35f-9c8d-4d6f-a457-4d3d8086e3af
+		summarizeBy: sum
+		sourceColumn: edad
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Hoja1 = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\pablo\Downloads\Dataa.xlsx"), null, true),
+				    Hoja1_Sheet = Origen{[Item="Hoja1",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Hoja1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"nombre", type text}, {"apellido", type text}, {"edad", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+
