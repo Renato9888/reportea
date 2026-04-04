@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "ac29dd19368a61710270",
+  "position": {
+    "x": 39.794301412083954,
+    "y": 257.97685053350978,
+    "z": 2,
+    "height": 279.93232717465958,
+    "width": 279.93232717465958,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hoja1"
+                    }
+                  },
+                  "Property": "edadprueba"
+                }
+              },
+              "queryRef": "Hoja1.edadprueba",
+              "nativeQueryRef": "edad prueba 3 final",
+              "displayName": "edad prueba 3 final"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Hoja1"
+                  }
+                },
+                "Property": "edadprueba"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b4d37cd36c7db177cf37",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Hoja1"
+              }
+            },
+            "Property": "edadprueba"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
