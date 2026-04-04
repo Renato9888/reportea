@@ -1,2 +1,246 @@
 cultureInfo es-ES
 
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "hoja_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hoja1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hoja 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Hoja1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "hoja_1.nombre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hoja1",
+			          "ConceptualProperty": "nombre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "hoja_1.apellido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hoja1",
+			          "ConceptualProperty": "apellido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "apellido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "hoja_1.edad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hoja1",
+			          "ConceptualProperty": "edad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "hoja_1.edadprueba": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hoja1",
+			          "ConceptualProperty": "edadprueba"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "edadprueba": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "medida dos prueba": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "hoja_1_has_nombre": {
+			      "Binding": {
+			        "ConceptualEntity": "Hoja1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hoja_1": {
+			          "Target": {
+			            "Entity": "hoja_1"
+			          }
+			        },
+			        "hoja_1.nombre": {
+			          "Target": {
+			            "Entity": "hoja_1.nombre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hoja_1"
+			            },
+			            "Object": {
+			              "Role": "hoja_1.nombre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hoja_1_have_nombres"
+			        }
+			      ]
+			    },
+			    "hoja_1_has_apellido": {
+			      "Binding": {
+			        "ConceptualEntity": "Hoja1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hoja_1": {
+			          "Target": {
+			            "Entity": "hoja_1"
+			          }
+			        },
+			        "hoja_1.apellido": {
+			          "Target": {
+			            "Entity": "hoja_1.apellido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hoja_1"
+			            },
+			            "Object": {
+			              "Role": "hoja_1.apellido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hoja_1_have_apellidos"
+			        }
+			      ]
+			    },
+			    "hoja_1_has_edad": {
+			      "Binding": {
+			        "ConceptualEntity": "Hoja1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hoja_1": {
+			          "Target": {
+			            "Entity": "hoja_1"
+			          }
+			        },
+			        "hoja_1.edad": {
+			          "Target": {
+			            "Entity": "hoja_1.edad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hoja_1"
+			            },
+			            "Object": {
+			              "Role": "hoja_1.edad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hoja_1_have_edads"
+			        }
+			      ]
+			    },
+			    "hoja_1_has_edadprueba": {
+			      "Binding": {
+			        "ConceptualEntity": "Hoja1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hoja_1": {
+			          "Target": {
+			            "Entity": "hoja_1"
+			          }
+			        },
+			        "hoja_1.edadprueba": {
+			          "Target": {
+			            "Entity": "hoja_1.edadprueba"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hoja_1"
+			            },
+			            "Object": {
+			              "Role": "hoja_1.edadprueba"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hoja_1_have_edadprueba"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+
