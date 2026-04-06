@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
   "name": "1164e502e6eeb85186ea",
   "position": {
-    "x": 10,
+    "x": 9.72644376899696,
     "y": 0,
     "z": 0,
-    "height": 280,
-    "width": 280,
+    "height": 170.21276595744681,
+    "width": 177.02127659574469,
     "tabOrder": 0
   },
   "visual": {
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "Hoja1.edadprueba",
-              "nativeQueryRef": "edadprueba"
+              "nativeQueryRef": "conteo ",
+              "displayName": "conteo "
             }
           ]
         }

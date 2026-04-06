@@ -90,17 +90,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "medida dos prueba": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
-			          "edad prueba 3 final": {
+			          "conteo": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
