@@ -1,0 +1,122 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "0c47aec4254309e71de6",
+  "position": {
+    "x": 29.179331306990882,
+    "y": 265.53191489361706,
+    "z": 1,
+    "height": 280.1215805471125,
+    "width": 393.92097264437689,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hoja1"
+                    }
+                  },
+                  "Property": "apellido"
+                }
+              },
+              "queryRef": "Hoja1.apellido",
+              "nativeQueryRef": "apellido"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Hoja1"
+                        }
+                      },
+                      "Property": "edad"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Hoja1.edad)",
+              "nativeQueryRef": "Suma de edad"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hoja1"
+                    }
+                  },
+                  "Property": "edadprueba"
+                }
+              },
+              "queryRef": "Hoja1.edadprueba",
+              "nativeQueryRef": "edadprueba"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ca07bc2b19b26180970d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Hoja1"
+              }
+            },
+            "Property": "apellido"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "17f6bb1913b705fcc1a9",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Hoja1"
+                  }
+                },
+                "Property": "edad"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "60eff1e3ce92c4e22c7c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Hoja1"
+              }
+            },
+            "Property": "edadprueba"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
