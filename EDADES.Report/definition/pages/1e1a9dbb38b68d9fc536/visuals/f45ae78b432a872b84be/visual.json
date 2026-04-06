@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "efa5f72f687609ed6ea9",
+  "name": "f45ae78b432a872b84be",
   "position": {
-    "x": 0,
-    "y": 278.17629179331306,
+    "x": 9.72644376899696,
+    "y": 452.27963525835867,
     "z": 2,
-    "height": 163.40425531914894,
-    "width": 471.73252279635261,
+    "height": 172.15805471124619,
+    "width": 630.27355623100311,
     "tabOrder": 2
   },
   "visual": {
-    "visualType": "pieChart",
+    "visualType": "donutChart",
     "query": {
       "queryState": {
         "Y": {
@@ -61,12 +61,27 @@
         "isDefaultSort": true
       }
     },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ANILLO EDAD'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "ff628d5b69888067eb4a",
+        "name": "941a777389c560f7da15",
         "field": {
           "Aggregation": {
             "Expression": {

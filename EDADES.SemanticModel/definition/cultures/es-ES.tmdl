@@ -88,16 +88,6 @@ cultureInfo es-ES
 			          "edadprueba": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "conteo": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    }

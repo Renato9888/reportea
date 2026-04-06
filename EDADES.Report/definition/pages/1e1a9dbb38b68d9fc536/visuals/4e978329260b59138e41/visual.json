@@ -1,19 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "416dadb33c32aa604a77",
+  "name": "4e978329260b59138e41",
   "position": {
-    "x": 0,
-    "y": 129.36170212765958,
+    "x": 9.72644376899696,
+    "y": 225.6534954407295,
     "z": 1,
-    "height": 170.21276595744681,
-    "width": 956.10942249240122,
+    "height": 172.15805471124619,
+    "width": 898.72340425531922,
     "tabOrder": 1
   },
   "visual": {
-    "visualType": "pivotTable",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Columns": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -27,32 +27,8 @@
                 }
               },
               "queryRef": "Hoja1.apellido",
-              "nativeQueryRef": "apellido",
-              "active": true
-            }
-          ]
-        },
-        "Rows": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Hoja1"
-                    }
-                  },
-                  "Property": "nombre"
-                }
-              },
-              "queryRef": "Hoja1.nombre",
-              "nativeQueryRef": "nombre",
-              "active": true
-            }
-          ]
-        },
-        "Values": {
-          "projections": [
+              "nativeQueryRef": "apellido"
+            },
             {
               "field": {
                 "Aggregation": {
@@ -70,8 +46,7 @@
                 }
               },
               "queryRef": "Sum(Hoja1.edad)",
-              "nativeQueryRef": "edad",
-              "displayName": "edad"
+              "nativeQueryRef": "Suma de edad"
             },
             {
               "field": {
@@ -91,12 +66,48 @@
         }
       }
     },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TABLA EDAD'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "09d3610e7318574ba572",
+        "name": "1db3fa11f2f84b214cd8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Hoja1"
+              }
+            },
+            "Property": "apellido"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "929357ccc6f17fb2d3ac",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -115,7 +126,7 @@
         "type": "Advanced"
       },
       {
-        "name": "eaaaea7d60f0a3e6a729",
+        "name": "afb8bb221b4b4b06053b",
         "field": {
           "Measure": {
             "Expression": {
@@ -127,34 +138,6 @@
           }
         },
         "type": "Advanced"
-      },
-      {
-        "name": "c014c2f66acfd14abb11",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Hoja1"
-              }
-            },
-            "Property": "nombre"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "660e0b6defa30ef51339",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Hoja1"
-              }
-            },
-            "Property": "apellido"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }
